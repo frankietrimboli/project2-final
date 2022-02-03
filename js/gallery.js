@@ -66,7 +66,7 @@ function toggleDetails()
     $( ".moreIndicator" ).removeClass("rot270");
     $(".moreIndicator").addClass("rot90");
   }
-  $( "details" ).slideToggle( "slow", "linear");
+  $( ".details" ).slideToggle( "slow", "linear");
 }
 
 // Counter for the mImages array
