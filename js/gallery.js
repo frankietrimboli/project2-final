@@ -55,7 +55,7 @@ function swapPhoto() {
   mCurrentIndex = +=1;
 }
 
-function toggleDetails()
+function toggleDetails(){
 {
   if($(".moreIndicator").hasClass("rot90"))
   {
@@ -68,7 +68,7 @@ function toggleDetails()
   }
   $( ".details" ).slideToggle( "slow", "linear");
 }
-
+}
 // Counter for the mImages array
 var mCurrentIndex = 0;
 
