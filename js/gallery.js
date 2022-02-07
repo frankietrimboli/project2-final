@@ -47,7 +47,7 @@ function swapPhoto() {
   var loc = document.getElementsByClassName('location');
   loc[0].innerHTML = "Location: " + mImages[mCurrentIndex].location;
   var des = document.getElementsByClassName('descrition');
-  des[0].innerHTML = "Description: " + mImages[mCurrentIndex].descrition;
+  des[0].innerHTML = "Description: " + mImages[mCurrentIndex].description;
   var dt = document.getElementsByClassName('date');
   dt[0].innerHTML = "Date: " + mImages[mCurrentIndex].date;
 
@@ -55,20 +55,20 @@ function swapPhoto() {
   mCurrentIndex = +=1;
 }
 
-function toggleDetails(){
+function toggleDetails()
 {
   if($(".moreIndicator").hasClass("rot90"))
   {
-    $( ".moreIndicator" ).removeClass("rot90");
+    $(".moreIndicator").removeClass("rot90");
     $(".moreIndicator").addClass("rot270");
   }
-  else {
-    $( ".moreIndicator" ).removeClass("rot270");
+  else{
+    $(".moreIndicator").removeClass("rot270");
     $(".moreIndicator").addClass("rot90");
   }
-  $( ".details" ).slideToggle( "slow", "linear");
+  $(".details").slideToggle("slow", "linear");
 }
-}
+
 // Counter for the mImages array
 var mCurrentIndex = 0;
 
