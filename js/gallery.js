@@ -46,7 +46,7 @@ function swapPhoto() {
   document.getElementById('photo').src = mImages[mCurrentIndex].img;
   var loc = document.getElementsByClassName('location');
   loc[0].innerHTML = "Location: " + mImages[mCurrentIndex].location;
-  var des = document.getElementsByClassName('descrition');
+  var des = document.getElementsByClassName('description');
   des[0].innerHTML = "Description: " + mImages[mCurrentIndex].description;
   var dt = document.getElementsByClassName('date');
   dt[0].innerHTML = "Date: " + mImages[mCurrentIndex].date;
@@ -103,7 +103,7 @@ function iterateJSON(mJson)
   {
     mImages[x] = new GalleryImage();
     mImages[x].location = mJson.images[x].imgLocation;
-    mImages[x].descrition = mJson.images[x].description;
+    mImages[x].description = mJson.images[x].description;
     mImages[x].date = mJson.images[x].date;
     mImages[x].img = mJson.images[x].imgPath;
   }
