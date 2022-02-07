@@ -52,7 +52,7 @@ function swapPhoto() {
   dt[0].innerHTML = "Date: " + mImages[mCurrentIndex].date;
 
   mLastFrameTime = 0;
-  mCurrentIndex = +=1;
+  mCurrentIndex += 1;
 }
 
 function toggleDetails()
