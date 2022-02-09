@@ -83,14 +83,14 @@ var mJson;
 
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
-var mUrl = 'image.json';
+var mUrl = 'images.json';
 
 function fetchJSON()
 {
   mRequest.onreadystatechange = function(){
     console.log("on ready state change");
     if (this.readyState == 4 && this.status == 200) {
-      mjson = JSON.parse(mRequest.responseText);
+      mJson = JSON.parse(mRequest.responseText);
       iterateJSON(mJson);
     }
   }
@@ -136,7 +136,7 @@ const urlParas = new URLSearchParams(window.location.search);
   }
   if(mUrl == undefined)
   {
-    mUrl = 'image.json';
+    mUrl = 'images.json';
   }
 
 fetchJSON();
