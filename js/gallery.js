@@ -59,14 +59,14 @@ function toggleDetails()
 {
   if($(" .moreIndicator").hasClass("rot90"))
   {
-    $(" .moreIndicator").removeClass("rot90");
+    $( " .moreIndicator").removeClass("rot90");
     $(".moreIndicator").addClass("rot270");
   }
   else{
-    $(" .moreIndicator").removeClass("rot270");
+    $( " .moreIndicator").removeClass("rot270");
     $(".moreIndicator").addClass("rot90");
   }
-  $(".details").slideToggle("slow", "linear");
+   $( ".details" ).slideToggle( "slow", "linear" );
 }
 
 // Counter for the mImages array
@@ -87,9 +87,9 @@ var mUrl = 'images.json';
 
 function fetchJSON()
 {
-  mRequest.onreadystatechange = function(){
+  mRequest.onreadystatechange = function() {
     console.log("on ready state change");
-    if (this.readyState == 4 && this.status == 200) {
+    if(this.readyState == 4 && this.status == 200) {
       mJson = JSON.parse(mRequest.responseText);
       iterateJSON(mJson);
     }
@@ -99,7 +99,7 @@ function fetchJSON()
 }
 function iterateJSON(mJson)
 {
-  for( x = 0; x < mJson.images.length; x++)
+  for( x = 0; x < mJson.images.length; x++ )
   {
     mImages[x] = new GalleryImage();
     mImages[x].location = mJson.images[x].imgLocation;
