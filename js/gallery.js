@@ -57,13 +57,13 @@ function swapPhoto() {
 
 function toggleDetails()
 {
-  if($(".moreIndicator").hasClass("rot90"))
+  if($(" .moreIndicator").hasClass("rot90"))
   {
-    $(".moreIndicator").removeClass("rot90");
+    $(" .moreIndicator").removeClass("rot90");
     $(".moreIndicator").addClass("rot270");
   }
   else{
-    $(".moreIndicator").removeClass("rot270");
+    $(" .moreIndicator").removeClass("rot270");
     $(".moreIndicator").addClass("rot90");
   }
   $(".details").slideToggle("slow", "linear");
@@ -83,7 +83,7 @@ var mJson;
 
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
-var mUrl;
+var mUrl = 'images.json';
 
 function fetchJSON()
 {
