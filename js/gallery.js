@@ -128,7 +128,7 @@ $(document).ready( function() {
 
 
 
-const urlParas = new URLSearchParams(window.location.search);
+const urlParams = new URLSearchParams(window.location.search);
 
   for (const [key, value] of urlParams) {
     console.log(`${key}:${value}`);
